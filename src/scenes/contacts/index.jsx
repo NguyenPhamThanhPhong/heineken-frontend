@@ -39,7 +39,7 @@ const Contacts = () => {
         },
         {
             field: "mostbrand",
-            headerName: "Most popular brands",
+            headerName: "Most popular brand",
             flex: 1,
         },
     ];
