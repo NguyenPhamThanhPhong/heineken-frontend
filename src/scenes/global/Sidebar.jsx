@@ -11,6 +11,7 @@ import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
+import AddToDriveOutlinedIcon from '@mui/icons-material/AddToDriveOutlined';
 import BarChartOutlinedIcon from "@mui/icons-material/BarChartOutlined";
 import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutlined";
 import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
@@ -133,7 +134,22 @@ const Sidebar = () => {
               color={colors.grey[300]}
               sx={{ m: "15px 0 5px 20px" }}
             >
-              Data
+              Import Data
+            </Typography>
+            <Item
+              title="Using Google Drive"
+              to="/invoices"
+              icon={<AddToDriveOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+
+            <Typography
+              variant="h6"
+              color={colors.grey[300]}
+              sx={{ m: "15px 0 5px 20px" }}
+            >
+              Exported Intelligence
             </Typography>
             {/* <Item
               title="Manage Team"
@@ -149,13 +165,6 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-            {/* <Item
-              title="Invoices Balances"
-              to="/invoices"
-              icon={<ReceiptOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            /> */}
 
             {/* <Typography
               variant="h6"
@@ -177,16 +186,9 @@ const Sidebar = () => {
               icon={<CalendarTodayOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
-            />
-            <Item
-              title="FAQ Page"
-              to="/faq"
-              icon={<HelpOutlineOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            /> */}
+            />*/}
 
-            <Typography
+            {/* <Typography
               variant="h6"
               color={colors.grey[300]}
               sx={{ m: "15px 0 5px 20px" }}
@@ -213,7 +215,7 @@ const Sidebar = () => {
               icon={<TimelineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
-            />
+            /> */}
             {/* <Item
               title="Geography Chart"
               to="/geography"
